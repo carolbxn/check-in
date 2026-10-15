@@ -127,3 +127,6 @@ nav[aria-label="Navegação principal"] .navIcon .uiIcon{width:21px;height:21px}
 header{min-width:0;padding-top:calc(15px + env(safe-area-inset-top));padding-bottom:15px;overflow:hidden}
 header>div{min-width:0}header h1,header .eyebrow{overflow-wrap:anywhere}
 main{padding-bottom:calc(95px + env(safe-area-inset-bottom))}
+
+/* v27: separate camera and gallery choices for iPhone */
+.photoSource{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photoSource label{min-width:0}.photoSource input[type=file]{display:block;width:100%;min-width:0;font-size:12px}@media(max-width:420px){.photoSource{grid-template-columns:1fr}}
