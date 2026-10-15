@@ -130,3 +130,16 @@ main{padding-bottom:calc(95px + env(safe-area-inset-bottom))}
 
 /* v27: separate camera and gallery choices for iPhone */
 .photoSource{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photoSource label{min-width:0}.photoSource input[type=file]{display:block;width:100%;min-width:0;font-size:12px}@media(max-width:420px){.photoSource{grid-template-columns:1fr}}
+
+/* v28: navegação única e controle de backup discreto */
+header .settingsIcon,.utilityAccess{display:none!important}
+#inicio{display:none!important}
+#backupReminder[hidden]{display:none!important}
+#backupReminder{display:block;width:100%;background:#27272b;color:#e9e9ed;border:1px solid #676973;border-radius:12px;text-align:left;font-size:12px;font-weight:500;padding:12px 13px;margin:10px 0 15px}
+.photoSource{display:block!important;margin:12px 0}.photoSource .singlePhoto{display:block;padding:13px;border:1px solid #66666c;border-radius:12px;background:#242428;font-weight:600}.photoSource .singlePhoto input{margin-top:8px;width:100%}.photoSource>input[hidden]{display:none!important}
+nav[aria-label="Navegação principal"] .navIcon{font-size:25px;line-height:1;font-weight:300}
+nav[aria-label="Navegação principal"] button{font-size:clamp(10px,2.6vw,12px)}
+
+/* v29: somente o nome do aplicativo no cabeçalho */
+header{justify-content:flex-start}
+header h1{margin:0}
